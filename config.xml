@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Profile Name="p1">
+    <RootDir>E:\Sitecore-Project\wwwroot</RootDir>
+
+    <Include>.+\.html</Include>
+    <Include>.+\.less</Include>
+    <Include>.+\.scss</Include>
+    <Include>.+\.jade</Include>
+    <Include>.+bower.+</Include>
+    <Include>.+\.yml</Include>
+    <Include>\.editorconfig</Include>
+    <Include>\.gitignore</Include>
+    <Include>\.gitattribute</Include>
+    <Include>\.jscsrc</Include>
+    <Include>\.jshintrc</Include>
+    <Include>.+\.pdb</Include>
+    <Include>^readme\..+</Include>
+    <Include>changelog\..+</Include>
+    <Include>.+\.csproj</Include>
+    <Include>.+\.sln</Include>
+    <Include>.+\.bak</Include>
+    <Include>.+\.config\..+</Include>
+    <Include>^test\..+</Include>
+    <Include>^test$</Include>
+    <Include>.+test\..+</Include>
+
+    <Exclude>.+\.config.dll</Exclude>
+    <Exclude>.+\.config.js</Exclude>
+    <Exclude>^.+\\[Ss]itecore(?:[^\\].+|.+)</Exclude>
+  </Profile>
+  <Profile Name="p2">
+    <RootDir>E:\Sitecore-Project\vendor\zk_1</RootDir>
+    <RootDir>E:\Sitecore-Project\vendor\zk_2</RootDir>
+    <RootDir>E:\Sitecore-Project\vendor\zk_3</RootDir>
+    <RootDir>E:\Sitecore-Project\vendor\solr_1</RootDir>
+    <RootDir>E:\Sitecore-Project\vendor\solr_2</RootDir>
+
+    <Include>.+\src\\.+</Include>
+
+    <Exclude>.+\bin\\</Exclude>
+    <Exclude>.+\server\\</Exclude>
+
+    <GenerateFile IncludeList="true" ExcludeList="true" />
+  </Profile>
+</Configuration>
